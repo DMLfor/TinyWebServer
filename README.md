@@ -23,7 +23,6 @@ G++5及以上
 openssl 用于创建证书文件
 
 # DEMO
-
-(demo)[http://www.littleblank.net:23333]
+[demo](http://www.littleblank.net:23333)
 
  
