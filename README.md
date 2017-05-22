@@ -24,6 +24,6 @@ openssl 用于创建证书文件
 
 # DEMO
 
-[demo](www.littleblank.net:23333)
+(demo)[www.littleblank.net:23333]
 
  
