@@ -18,15 +18,16 @@ LPATH_HTTPS = -I/usr/include/openssl
 
 LLIB_COMMON = -L/usr/lib
 
+all:
+	make http
+	make https
 http:
 	$(CXX) $(SOURCE_HTTP) $(LDFLAGS_COMMON) $(LDFLAGS_HTTP) $(LPATH_COMMON) $(LPATH_HTTP) $(LLIB_COMMON) $(LLIB_HTTP) -o $(EXEC_HTTP)
 
 https:
 	$(CXX) $(SOURCE_HTTPS) $(LDFLAGS_COMMON) $(LDFLAGS_HTTPS) $(LPATH_COMMON) $(LPATH_HTTPS) -o $(EXEC_HTTPS)
 
-all:
-	make http
-	make https
+
 clean:
 	rm -f $(EXEC_HTTP) *.o
 
